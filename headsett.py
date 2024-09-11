@@ -6,7 +6,8 @@ while True:
           3.update Headset
           4.Remove the headset
           5.search the headset
-          6.exit''')
+          6.Add some Specification of Headset
+          7.exit''')
     choice=int(input("Enter the Choice : "))
     if choice==1:
         name=str(input("Name of headset : "))
@@ -57,6 +58,12 @@ while True:
         if f==0:
             print(" invalid id ")
     elif choice==4:
+        print('''
+                1.Boat
+                2.Realme
+                3.Noice
+                4.GoVo
+                        ''')
         id=int(input("Enter the id"))
         f=0                                                                      
         for i in headset:
@@ -67,6 +74,12 @@ while True:
             print("Invalid id")
 
     elif choice==5:
+        print('''
+                1.Boat
+                2.Realme
+                3.Noice
+                4.GoVo
+                        ''')
         id=int(input("Enter the Id "))
         f=0
         for i in headset:
@@ -77,6 +90,21 @@ while True:
             print("Invalid id")
 
     elif choice==6:
+        print('''
+                1.Boat
+                2.Realme
+                3.Noice
+                4.GoVo
+                        ''')
+         
+        id=int(input("Enter the Id of Headset"))
+        for i in headset:
+            if id==i['bid']:                                                          
+                rating=str(input("Enter the rating:",))
+                i.append(rating)
+                print(i)
+
+    elif choice==7:
         break
     else:
         print("invalid choice")
